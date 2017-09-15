@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>VueJs Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+<div id="vue-app2">
+    <h1>Event</h1>
+    <!--<button @click="add(1)">1년더하기</button>-->
+    <button @click.once="add(1)">1년더하기</button>
+    <button v-on:click="minus(1)">1년빼기</button>
+    <button @dblclick="add(10)">10년더하기</button>
+    <button v-on:dblclick="minus(10)">10년빼기</button>
+    <p>My Age is {{age}}</p>
+    <div id="canvas" v-on:mousemove="updataXY">{{x}},{{y}}</div>
+    <a v-on:click.prevent="click()" href="https://tuhbm.github.io">블로그 바로가기</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
