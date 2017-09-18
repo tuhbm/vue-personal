@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/170915styles.css">
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>Keyboard Events</h1>
+    <div>
+        <label for="">Name:</label>
+        <input type="text" v-model="name"><!-- v-model 어트리뷰트를 이용하면 데이터의 키에 맞게 설정됨 -->
+        <p>{{name}}</p>
+    </div>
+    <!--<div>-->
+        <!--<label for="">Age:</label>-->
+        <!--<input type="text" v-model="age">-->
+        <!--<span>{{age}}</span>-->
+    <!--</div>-->
+
+</div>
+<script src="js/170918app.js"></script>
+</body>
+</html>

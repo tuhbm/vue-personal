@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Css</title>
+    <link rel="stylesheet" href="css/170918styles.css">
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>Dynamic Css</h1>
+    <h2>Example1</h2>
+    <div v-bind:class="{red:true, blue:true}"></div>
+    <div v-bind:class="{red:true, blue:false}"></div>
+    <div v-on:click="available = !available" v-bind:class="{available:available}">
+        <span>box</span>
+    </div>
+    <!--<h2>Example2</h2>-->
+    <!--<button @click="nearby = !nearby">Toggle nearby</button>-->
+    <!--<button @click="available = !available">Toggle available</button>-->
+    <!--<div :class="compClasses">-->
+        <!--<span>Ryu</span>-->
+    <!--</div>-->
+
+</div>
+<script src="js/170918app3.js"></script>
+</body>
+</html>

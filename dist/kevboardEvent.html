@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>VueJs Tutorials</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/170915styles.css">
     <script src="../node_modules/vue/dist/vue.min.js"></script>
 </head>
 <body>
 <div id="vue-app3">
     <h1>Keyboard Events</h1>
     <label for="">Name:{{name}}</label>
-    <input type="text" v-on:keyup.enter="logName()">
+    <input type="text" v-on:keyup.enter="logName">
     <label for="">Age:</label>
     <input type="text" v-on:keyup.alt.enter="logAge()">
 </div>
 
-<script src="app.js"></script>
+<script src="js/170915app.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Properties</title>
+    <link rel="stylesheet" href="css/170915styles.css">
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>Computer Properties</h1>
+    <button v-on:click="a++">Add to A</button>
+    <button v-on:click="b++">Add to B</button>
+    <p>A - {{ a }}</p>
+    <p>B - {{ b }}</p>
+    <p>Age + A = {{ addToA }}</p>
+    <p>Age + B = {{ addToB }}</p>
+</div>
+<script src="js/170918app2.js"></script>
+</body>
+</html>

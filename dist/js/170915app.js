@@ -1,8 +1,8 @@
 new Vue({
-  el: '#vue-app',
+  el: '#app',
   data: {
     name: '태균',
-    job: '프론트엔드개발자',
+    job: '프론트엔드개발자zzz',
     website: 'https://tuhbm.github.io',
     websiteTag:'<a href="https://tuhbm.github.io">블로그바로가기</a>'
   },
@@ -13,7 +13,7 @@ new Vue({
     }
   }
 });
-
+//
 new Vue({
   el: '#vue-app2',
   data: {
@@ -46,7 +46,7 @@ new Vue({
   },
   methods:{
     logName:function(){
-      console.log('You entered your name');
+      console.log('콘솔이벤트실행');
     },
     logAge:function(){
       console.log('You entered your age');
