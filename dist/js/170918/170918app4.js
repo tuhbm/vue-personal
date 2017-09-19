@@ -4,5 +4,7 @@ new Vue({
     error:false,
     success:false
   },
-  methods:{}
+  methods:{
+
+  }
 });
